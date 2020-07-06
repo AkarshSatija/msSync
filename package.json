@@ -1,0 +1,11 @@
+{
+  "name": "msSyncer",
+  "version": "0.0.1",
+  "description": "Sync local files to gcs bucket",
+  "main": "index.js",
+  "author": "Akarsh <akarsh.satija@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/storage": "^5.0.1"
+  }
+}
