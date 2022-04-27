@@ -24,9 +24,9 @@ async function main(bucketName, directoryPath, keyFile) {
           const fullPath = path.join(directory, item);
           fs.stat(fullPath, (err, stat) => {
             itemCtr--;
-            if (stat.isFile()) {
+            if (stat?.isFile()) {
               fileList.push(fullPath);
-            } else if (stat.isDirectory()) {
+            } else if (stat?.isDirectory()) {
               dirCtr++;
               getFiles(fullPath);
             }
